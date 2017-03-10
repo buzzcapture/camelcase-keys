@@ -4,6 +4,7 @@
   "description": "Convert object keys to camelCase",
   "license": "MIT",
   "repository": "sindresorhus/camelcase-keys",
+  "main": "./build/index.js",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
@@ -13,7 +14,8 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "xo && ava",
+    "build": "babel ./index.js -d ./build"
   },
   "files": [
     "index.js"
@@ -50,6 +52,8 @@
   },
   "devDependencies": {
     "ava": "*",
+    "babel-cli": "^6.23.0",
+    "babel-preset-env": "^1.2.1",
     "xo": "*"
   },
   "xo": {
