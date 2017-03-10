@@ -1,11 +1,13 @@
 'use strict';
+
 const mapObj = require('map-obj');
 const camelCase = require('camelcase');
+const _ = require('lodash');
 
 const has = (arr, key) => arr.some(x => typeof x === 'string' ? x === key : x.test(key));
 
 module.exports = (input, opts) => {
-	opts = Object.assign({
+	opts = _.assign({
 		exclude: [],
 		deep: false
 	}, opts);

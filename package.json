@@ -48,6 +48,7 @@
   ],
   "dependencies": {
     "camelcase": "^3.0.0",
+    "lodash": "^4.17.4",
     "map-obj": "https://github.com/buzzcapture/map-obj/archive/master.tar.gz"
   },
   "devDependencies": {

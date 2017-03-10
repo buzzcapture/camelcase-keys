@@ -2,6 +2,7 @@
 
 var mapObj = require('map-obj');
 var camelCase = require('camelcase');
+var _ = require('lodash');
 
 var has = function has(arr, key) {
 	return arr.some(function (x) {
@@ -10,7 +11,7 @@ var has = function has(arr, key) {
 };
 
 module.exports = function (input, opts) {
-	opts = Object.assign({
+	opts = _.assign({
 		exclude: [],
 		deep: false
 	}, opts);
