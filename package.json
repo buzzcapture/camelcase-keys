@@ -1,6 +1,6 @@
 {
   "name": "camelcase-keys",
-  "version": "4.0.0-bc",
+  "version": "4.0.1-bc",
   "description": "Convert object keys to camelCase",
   "license": "MIT",
   "repository": "sindresorhus/camelcase-keys",
@@ -18,7 +18,8 @@
     "build": "babel ./index.js -d ./build"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "build"
   ],
   "keywords": [
     "map",
